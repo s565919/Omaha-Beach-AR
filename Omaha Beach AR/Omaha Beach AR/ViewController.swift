@@ -167,7 +167,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         if hitResults.count > 0 {
             let result = hitResults.first!
             let newLocation = SCNVector3(x: result.worldTransform.columns.3.x, y: result.worldTransform.columns.3.y + 0.15, z: result.worldTransform.columns.3.z)
-            guard let mapScene = SCNScene(named: "art.scnassets/map.scn"),
+            guard let mapScene = SCNScene(named: "art.scnassets/map2.scn"),
                 let mapNode = mapScene.rootNode.childNodes.first
                 else { return }
             mapNode.position = newLocation
